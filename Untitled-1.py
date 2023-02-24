@@ -1,2 +1,2 @@
-for i in range(20,10,-1):
-    print(i,end=' ')
+for i in range(200,2):
+    print(i, end=' ')
