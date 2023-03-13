@@ -2,7 +2,6 @@ s=input('Nhập 1 xâu bất kì: ')
 num=[]
 n=''
 char=0
-dx=False
 for i in s:
     n=i+n
     if i>='0' and i<='9':
@@ -10,7 +9,6 @@ for i in s:
     if (i>='A' and i<='Z') or (i>='a' and i<='z'):
         char+=1
 if n == s:
-    dx=True
     print('Xâu đối xứng')
 else:
     print('Xâu ko đối xứng')
