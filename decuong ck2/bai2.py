@@ -1,7 +1,7 @@
 def str_reverse(n):     #Hàm đảo ngược xâu
     s=''
     for i in n:
-        s=i+n
+        s=i+s
     print('Xâu được đảo ngược là:', s)
 def num_in_str(n):      #Hàm in các số có trong xâu ra màn hình
     s=[]
