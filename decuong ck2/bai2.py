@@ -5,9 +5,11 @@ def str_reverse(n):     #Hàm đảo ngược xâu
     print('Xâu được đảo ngược là:', s)
 def num_in_str(n):      #Hàm in các số có trong xâu ra màn hình
     s=[]
+    n=''
     for i in n:
         if i>='0' and i<='9':
             s.append(i)
+            n+=i
     print('Các số có trong xâu vừa nhập là:', ", ".join(s))
 def char_sequence(n):   #Hàm đếm số chữ cái Tiếng Anh trong xâu
     char=0
