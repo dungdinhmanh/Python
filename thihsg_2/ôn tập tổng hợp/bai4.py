@@ -1,0 +1,1 @@
+a,b,c=map(int,input('Nhập 3 số: ').split())
