@@ -1,4 +1,3 @@
-import os
 def prntsc(n):      #In dãy số vừa nhập ra màn hình
     print('Dãy số vừa nhập là: ', end='')
     for i in n:
