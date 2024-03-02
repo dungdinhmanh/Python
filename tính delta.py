@@ -1,7 +1,5 @@
 from math import sqrt
-a=int(input("Nhập giá trị a:"))
-b=int(input("Nhập giá trị b:"))
-c=int(input("Nhập giá trị c:"))
+a,b,c= map(int,input('Nhập 3 số:').split())
 if a!=0:
     d= b^2-4*a*c
     print("=> Δ =", d)
