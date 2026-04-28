@@ -1,0 +1,17 @@
+# C build files
+*.o
+*.a
+*.so
+
+# Executables
+*.exe
+*.out
+
+# OS files
+.DS_Store
+
+# Ignore C/C++ binaries (no extension)
+C/**/[!.]*
+!C/**/*.c
+!C/**/*.h
+!C/**/*.cpp
