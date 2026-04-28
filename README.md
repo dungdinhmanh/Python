@@ -1,2 +1,2 @@
 # Python
-# I created this repo to upload python excercise
+# I created this repo to upload my excercise
