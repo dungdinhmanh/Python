@@ -4,7 +4,7 @@
         {
             "label": "Auto Build C/C++",
             "type": "shell",
-            "command": "if [[ \"${fileExtname}\" == \".cpp\" ]]; then g++ -g \"${file}\" -o \"${fileDirname}/${fileBasenameNoExtension}\"; else gcc -g \"${file}\" -o \"${fileDirname}/${fileBasenameNoExtension}\" -lm; fi",
+            "command": "if [[ \"${fileExtname}\" == \".cpp\" ]]; then g++ -g \"${file}\" -o \"${fileDirname}/${fileBasenameNoExtension}.out\"; else gcc -g \"${file}\" -o \"${fileDirname}/${fileBasenameNoExtension}.out\" -lm; fi",
             "group": {
                 "kind": "build",
                 "isDefault": true
