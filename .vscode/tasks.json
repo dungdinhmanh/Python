@@ -1,15 +1,15 @@
 {
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "Auto Build C/C++",
-            "type": "shell",
-            "command": "if [[ \"${fileExtname}\" == \".cpp\" ]]; then g++ -g \"${file}\" -o \"${fileDirname}/${fileBasenameNoExtension}.out\"; else gcc -g \"${file}\" -o \"${fileDirname}/${fileBasenameNoExtension}.out\" -lm; fi",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "detail": "Auto detect C/C++ file by extension (Only work on Linux)"
-        }
-    ]
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Auto Build C/C++",
+      "type": "shell",
+      "command": "if [[ \"${fileExtname}\" == \".cpp\" ]]; then clang++ -g -Wall -Wextra \"${file}\" -o \"${fileDirname}/${fileBasenameNoExtension}.out\"; else clang -g -Wall -Wextra \"${file}\" -o \"${fileDirname}/${fileBasenameNoExtension}.out\" -lm; fi",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "Auto detect C/C++ file by extension (Only work on Linux)"
+    }
+  ]
 }
