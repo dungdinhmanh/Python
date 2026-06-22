@@ -1,1 +1,0 @@
-DROP DATABASE ql_GiaoHang

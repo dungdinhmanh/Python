@@ -109,7 +109,7 @@ WHERE HOCVI = 'THAC SY' and MAKHOA = 'CNTT';
 
 SELECT Sinhvien.MASV, HOTENSV, DIEMTHI
 FROM Sinhvien, Ketqua
-WHERE Sinhvien.MASV = Ketqua.MASV and MAMH = '869' and LANTHI = 1
+WHERE Sinhvien.MASV = Ketqua.MASV and MAMH = '869' and LANTHI = 1;
 
 SELECT Giangvien.MAGV, HOTENGV, TENKHOA, HOCVI, TENMH
 FROM Giangvien, Khoa, Phancong, Monhoc
@@ -117,3 +117,10 @@ WHERE MALOP = 'CDTH2A'
   and Monhoc.MAMH = Phancong.MAMH
   and Phancong.MAGV = Giangvien.MAGV
   and Khoa.MAKHOA = Giangvien.MAKHOA;
+
+SELECT GV.MAGV, HOTENGV, TENKHOA, HOCVI, TENMH
+FROM Giangvien GV
+     join Khoa KH ON KH.MAKHOA = GV.MAKHOA
+     join Phancong PC ON PC.MAGV = GV.MAGV
+     join Monhoc MH ON MH.MAMH = PC.MAMH
+WHERE MALOP = 'CDTH2A';
