@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:mariadb://100.106.135.3:3306</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="MoeDB" uuid="d88561ab-1fd6-4f66-9ec1-46ab1b2a6416">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://aws-1-ap-southeast-1.pooler.supabase.com:6543/postgres</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
