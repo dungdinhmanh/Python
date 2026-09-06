@@ -108,11 +108,10 @@ FROM Giaovien GV
     JOIN Phonghoc PH ON PH.SOPHONG = DBG.SOPHONG
 WHERE GV.MAGV = 'TH3A040' and NGAYDAY BETWEEN '2002-09-16' AND '2002-09-23';
 
-SELECT Giaovien.MAGV, HOTEN, TENLOP, TENMH, Phonghoc.SOPHONG, NGAYDAY, TUTIET, DENTIET, BAIDAY, GHICHU
-FROM Giaovien, Lop, Monhoc, Phonghoc, Lichbaogiang, Dongbaogiang
+SELECT Giaovien.MAGV, HOTEN, TENLOP, TENMH, SOPHONG, NGAYDAY, TUTIET, DENTIET, BAIDAY, GHICHU
+FROM Giaovien, Lop, Monhoc, Lichbaogiang, Dongbaogiang
 WHERE NGAYDAY = '2002-09-23' and Giaovien.MAKHOA = 'CNTT'
   and Giaovien.MAGV = Lichbaogiang.MAGV
-  and Phonghoc.SOPHONG = Dongbaogiang.SOPHONG
   and Monhoc.MAMH = Dongbaogiang.MAMH
   and Dongbaogiang.MALICH = Lichbaogiang.MALICH
   and Lop.MALOP = Dongbaogiang.MALOP;

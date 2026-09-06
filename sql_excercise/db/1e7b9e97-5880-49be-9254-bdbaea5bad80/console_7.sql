@@ -79,15 +79,17 @@ WHERE NGAYMUON = ''
   and Docgia.MADG = Phieumuon.MADG;
 
 SELECT Sach.MASH, TENSACH, TACGIA, NGAYMUON, NGAYTRA
-FROM Sach, Phieumuon, Chitietmuon
+FROM Sach, Phieumuon, Chitietmuon, Dausach
 WHERE Phieumuon.SOPM = Chitietmuon.SOPM
+and Dausach.MASH = Sach.MASH
+and
 GROUP BY MASH;
 
-SELECT Docgia.MADG, HOTEN,COUNT(SOPM) AS SOLANMUON
+SELECT Docgia.MADG, HOTEN, COUNT(SOPM) AS SOLANMUON
 FROM Phieumuon, Docgia
 WHERE YEAR(NGAYMUON) = '2001'
   and Docgia.MADG = Phieumuon.MADG
-GROUP BY Docgia.MADG;
+GROUP BY Docgia.MADG, HOTEN;
 
 SELECT Docgia.*
 FROM Docgia, Phieumuon
