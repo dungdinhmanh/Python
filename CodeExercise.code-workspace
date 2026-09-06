@@ -1,7 +1,9 @@
 {
 	"folders": [
 		{"name": "C", "path": "C"},
-		{"name": "Python", "path": "Python"}
+    {"name": "C#", "path": "C#"}
+		{"name": "Python", "path": "Python"},
+    {"name": "Web", "path": "web"}
 	],
 	"launch": {
 		"version": "0.2.0",
